@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="cont">
+<div id="box">
+
+    
+    
+</div>
+</div>
+
+ <script type="text/javascript">
+
+     
+
+     
+     var pos=0;
+     var box=document.getElementById("box");
+     var t= setInterval(move,10);
+     function move(){
+         if(pos>=150){
+             clearInterval(t);
+         }
+         else{
+             pos+=1;
+             box.style.left=pos+"px";
+         }
+     }
+
+     
+     /*
+     var p=document.createElement("p");
+     var node=document.createTextNode("This is new");   //Создать новый элемент параграфа
+     p.appendChild(node);
+     
+     var parent = document.getElementById("demo")
+     var child=document.getElementById("p1");
+     parent.replaceChild(p,child);
+     
+     
+     */
+     
+     
+     
+     
+     
+ </script>   
+ 
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
