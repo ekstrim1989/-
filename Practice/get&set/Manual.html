@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<body>
+    <script type="text/javascript">
+ 
+ 
+/********************************
+СВОЙСТВО SET
+*********************************/
+class Car{
+    constructor(){                  //1) Объявил конструктор
+    this.svoistvo1='Значение1'      //2) Задал свойство конструктора
+    }
+    set change(val){                //3) Включаем Set 
+        this.svoistvo1 = val        //4) this.svoistvo1 = шагу 5)
+    }
+}
+
+let obj=new Car(); //свойства объекта приходят из класса Car
+
+obj.change='Присваивается'          //5) Присваиваем новое значение
+console.log(obj.svoistvo1)          //6) У svoistvo1 теперь новое значение
+
+
+
+/********************************
+СВОЙСТВО GET
+*********************************/
+class Car2{
+    constructor(){                  //1) Объявил конструктор
+    this.svoistvo2='Значение2'      //2) Задал свойство конструктора
+    }
+    get change2(){
+    return this.svoistvo2='sflkj'
+    }
+
+    }
+
+let obj2=new Car2();//свойства объекта приходят из класса Car2
+
+obj.change2='Присваивается2'       //5) Присваиваем новое значение
+console.log(obj2.change2)          //6) У svoistvo2 теперь новое значение
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+   </script>
+    
+</body>
+</html>
