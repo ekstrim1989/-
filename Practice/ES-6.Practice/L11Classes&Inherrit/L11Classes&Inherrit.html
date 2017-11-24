@@ -19,23 +19,21 @@
 
 class Task{
     constructor(){
-        this.name='Name'
-}
-}
+        this.name='Name'        //1) Главный конструктор
+}}
 
-class SubTask extends Task{
- constructor(){
-     super(),
-     this.age='My Age'
- }
-}
+class SubTask extends Task{    //2) SubTask наследуется от Task
+ constructor(){                //3) Если будем добавлять что-то ещё     
+     super(),                  //3) Если будем добавлять что-то ещё      
+     this.age='My Age'         //4) Добавляем свойства
+ }}
 
 
 
 
-let t = new Task();
-let s = new SubTask();
-console.log(s.age)
+let t = new Task();         //5) Объявить оба конструктора 
+let s = new SubTask();      //5) Объявить оба конструктора 
+console.log(s.age)          //6) Вывести в консоль
 
 
 
