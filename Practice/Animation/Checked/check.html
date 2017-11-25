@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<body>
+   
+  <input type="radio" name="rad" value="10">1
+  <input type="radio" name="rad" value="20">2
+  <input type="radio" name="rad" value="30">3
+  <input type="radio" name="rad" value="40">4
+  <button onclick="f()">Кнопка</button> 
+   
+   
+    <script type="text/javascript">
+ 
+    let f=()=>{
+        let radioArr=document.getElementsByName('rad');
+        for(i=0;i<radioArr.length;i++){
+            if(radioArr[i].checked){
+                alert(`Выбрана ${i+1} кнопка `)
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+let fun=()=>{
+         let box=document.getElementById('first');
+         if (box.checked){
+             alert('Выбрана')
+         }
+            else{
+                alert("sdf")
+            }
+        }
+*/
+   
+   
+   
+   </script>
+    
+</body>
+</html>

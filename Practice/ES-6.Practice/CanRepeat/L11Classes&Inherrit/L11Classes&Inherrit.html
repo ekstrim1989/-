@@ -15,7 +15,7 @@
 
 /******************************
         НАСЛЕДОВАНИЕ 
-*******************************/
+*******************************//*
 
 class Task{
     constructor(){
@@ -36,13 +36,25 @@ let s = new SubTask();      //5) Объявить оба конструктор�
 console.log(s.age)          //6) Вывести в консоль
 
 
+*/
+     
 
+     
+class Fc{
+    constructor(){
+    this.name='Имя'
+    }
+}
 
-
-
-
-
-
+class Cf extends Fc{
+    constructor(){
+        super();
+        this.lastname='Фамилия'
+    }
+}
+let pere= new Fc();     
+let pere1= new Cf();
+     console.log(pere1.name)
 
 
 
